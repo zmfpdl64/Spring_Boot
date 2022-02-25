@@ -6,7 +6,7 @@ import java.util.Optional;
 import hello.hellospring.domain.Member;
 import org.springframework.stereotype.Repository;
 
-@Repository
+//@Repository
 public class MemoryMemberRepository implements MemberRepoistory{
 
     private static Map<Long, Member> store = new HashMap<> ();

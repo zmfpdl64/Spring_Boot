@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 public class MemberController {
 
     private final MemberService memberService;
+
     @Autowired  //생성자에 넣어주는 어노테이션
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
