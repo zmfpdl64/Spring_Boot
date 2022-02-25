@@ -1,5 +1,7 @@
 package hello.hellospring.domain;
 
+import java.util.function.IntPredicate;
+
 public class Member {
     
     private Long id;
@@ -16,5 +18,8 @@ public class Member {
     }
     public void setname(String name) {
         this.name = name;
+    }
+    public IntPredicate isEqualTo(Member result) {
+        return null;
     }
 }
