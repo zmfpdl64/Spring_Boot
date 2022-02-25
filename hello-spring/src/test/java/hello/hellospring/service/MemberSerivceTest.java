@@ -20,9 +20,9 @@ class MemberServiceTest {
 
     @BeforeEach
     public void beforeEach() {
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    }
+        memberRepository = new MemoryMemberRepository();    //그냥 비즈니스 로직 없는 회원창고
+        memberService = new MemberService(memberRepository);    //비즈니스 로직을 추가한 회원 창고
+    }                                                       //둘 다 같은 회원 창고를 사용하고 있다.
 
     @AfterEach
     public void afterEach() {
