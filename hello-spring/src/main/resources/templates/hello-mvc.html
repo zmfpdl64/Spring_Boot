@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>hello-mvc</title>
+</head>
+<body>
+    <p th:text="'hello ' + ${name}">hello! empty</p> 
+    <!-- 모델의 key값이 name인 value를 출력한다. 만약 text값이 존재하지 않는다면 p태그 사이의 값이 출력된다. -->
+</body>
+</html>
